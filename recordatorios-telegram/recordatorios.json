@@ -3,11 +3,11 @@
   "_nota": "Edita libremente esta lista. Cada objeto es un recordatorio. Campos: id, tipo (fijo | ia), activo (true/false), dias ('diario' o lista como ['lun','mie','vie']), mensaje, y para tipo 'ia': prompt, modelo (opcional), mensaje (respaldo opcional).",
   "recordatorios": [
     {
-      "id": "revisar-pipeline",
+      "id": "Levantar-diario",
       "tipo": "fijo",
       "activo": true,
       "dias": ["lun", "mie", "vie"],
-      "mensaje": "🔔 Recordatorio: revisar el pipeline de agentes y los pendientes del día."
+      "mensaje": "🔔 Recordatorio: Levántate!!."
     },
     {
       "id": "cierre-semana",
