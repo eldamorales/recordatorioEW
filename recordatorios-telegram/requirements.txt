@@ -1,0 +1,9 @@
+# Dependencias del proyecto de recordatorios de Telegram.
+# El envío a Telegram usa solo la librería estándar (urllib), así que
+# lo mínimo indispensable es python-dotenv para leer el .env en local.
+
+python-dotenv>=1.0.0
+
+# Solo se necesita si usas recordatorios de tipo "ia" (API de Claude).
+# Puedes dejarlo comentado si no usarás IA.
+anthropic>=0.40.0

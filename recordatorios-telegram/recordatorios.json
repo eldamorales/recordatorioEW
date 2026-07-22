@@ -1,0 +1,37 @@
+{
+  "zona_horaria": "America/Mexico_City",
+  "_nota": "Edita libremente esta lista. Cada objeto es un recordatorio. Campos: id, tipo (fijo | ia), activo (true/false), dias ('diario' o lista como ['lun','mie','vie']), mensaje, y para tipo 'ia': prompt, modelo (opcional), mensaje (respaldo opcional).",
+  "recordatorios": [
+    {
+      "id": "revisar-pipeline",
+      "tipo": "fijo",
+      "activo": true,
+      "dias": ["lun", "mie", "vie"],
+      "mensaje": "🔔 Recordatorio: revisar el pipeline de agentes y los pendientes del día."
+    },
+    {
+      "id": "cierre-semana",
+      "tipo": "fijo",
+      "activo": true,
+      "dias": ["vie"],
+      "mensaje": "✅ Viernes: cierra tareas de la semana, registra avances y prepara el plan del lunes."
+    },
+    {
+      "id": "hidratacion",
+      "tipo": "fijo",
+      "activo": false,
+      "dias": "diario",
+      "mensaje": "💧 Pausa saludable: toma agua y estírate 2 minutos."
+    },
+    {
+      "id": "arranque-motivador-ia",
+      "tipo": "ia",
+      "activo": false,
+      "dias": ["lun"],
+      "prompt": "Escribe un recordatorio breve (máximo 3 líneas, en español, tono cálido y profesional) para arrancar la semana con foco en el proyecto de agentes de negocio. Incluye una micro-acción concreta para hoy. No uses hashtags.",
+      "modelo": "claude-haiku-4-5",
+      "max_tokens": 300,
+      "mensaje": "🚀 Nueva semana: define tu prioridad #1 y dedícale el primer bloque del día."
+    }
+  ]
+}
